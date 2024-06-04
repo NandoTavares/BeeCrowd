@@ -1,0 +1,12 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+ double litros, velocidade, tempo;
+ scanf("%lf %lf", &tempo, &velocidade);
+ velocidade = tempo*velocidade;
+ litros =  velocidade/12;
+ printf("%.3lf\n", litros);
+ 
+    return 0;
+}
