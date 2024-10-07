@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int CalculaSoma(int valor1, int valor2) {
+    int valorfinal = 0;
+    
+    if (valor1 > valor2) {
+        for (int i = valor2 + 1; i < valor1; i++) {
+            if (i % 2 != 0) {  
+                valorfinal += i;
+            }
+        }
+    } else {
+        for (int i = valor1 + 1; i < valor2; i++) {
+            if (i % 2 != 0) {  
+                valorfinal += i;
+            }
+        }
+    }
+    
+    return valorfinal;
+}
+
+int main() {
+    int valor1 = 0, valor2 = 0;
+
+    scanf("%d %d", &valor1, &valor2);
+
+    int soma = CalculaSoma(valor1, valor2);
+    printf("%d\n", soma);
+
+    return 0;
+}
